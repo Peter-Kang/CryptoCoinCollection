@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<!-- open props -->
+		<link rel="stylesheet" href="https://unpkg.com/open-props" />
+		<link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
+
+		<!-- Tram-Lite & Javascript -->
+		<script src='https://unpkg.com/tram-lite@2'></script>
+		<script src="./main.js"></script>
+		<script src="./router.js"></script>
+
+		<style>
+			body {
+				margin: 15px;
+			}
+			main {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Crypto Coin Collection</h1>
+		</header>
+		<main>
+			<coin-preview name="Bitcoin" ticker="BTC" price="$30k" icon="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"></coin-preview>
+			<coin-preview name="Ethereum" ticker="ETH" price="$1.8k" icon="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"></coin-preview>
+			<coin-preview name="Tether" ticker="USDT" price="$1" icon="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"></coin-preview>
+		</main>
+	</body>
+</html>
