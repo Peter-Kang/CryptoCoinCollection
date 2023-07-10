@@ -30,6 +30,9 @@ define`
 			<span id="name">${'name'} (${'ticker'})</span>
 			<span id="price">${'price'}</span>
 		</div>
+		<script>
+			getPriceOf(this);
+		</script>
 	</coin-preview>
 `
 
