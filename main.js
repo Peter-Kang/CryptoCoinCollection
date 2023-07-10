@@ -32,6 +32,10 @@ define`
 		</div>
 		<script>
 			getPriceOf(this);
+			const interval = 5000;//in milliseconds
+			setInterval(() => {
+				getPriceOf(this);
+			}, (interval));
 		</script>
 	</coin-preview>
 `
