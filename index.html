@@ -1,35 +1,66 @@
 <html>
-	<head>
-		<!-- open props -->
-		<link rel="stylesheet" href="https://unpkg.com/open-props" />
-		<link rel="stylesheet" href="https://unpkg.com/open-props/normalize.dark.min.css" />
+  <head>
+    <!-- meta tags-->
+    <meta name="title" content="Crypto Coin Collection" />
+    <meta
+      name="description"
+      content="Displays Crypto Prices and refreshes every few seconds."
+    />
+    <meta name="keywords" content="Crypto Coin Collection" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="90 days" />
+    <meta name="author" content="Peter Kang" />
 
-		<!-- Tram-Lite & Javascript -->
-		<script src='https://unpkg.com/tram-lite@2'></script>
-		<script src="./main.js"></script>
-		<script src="./router.js"></script>
-		<script src="./price.js"></script>
-		<style>
-			body {
-				margin: 15px;
-			}
-			main {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				gap: 15px;
-			}
-		</style>
-		<title>Crypto Coin Collection</title>
-	</head>
-	<body>
-		<header>
-			<h1>Crypto Coin Collection</h1>
-		</header>
-		<main>
-			<!--List of coins https://coinmarketcap.com/ -->
-			<coin-preview name="Bitcoin" ticker="BTC" price="$$$" icon="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"></coin-preview>
-			<coin-preview name="Ethereum" ticker="ETH" price="$$$" icon="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"></coin-preview>
-			<coin-preview name="Dogecoin" ticker="DOGE" price="$$$" icon="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"></coin-preview>
-		</main>
-	</body>
+    <!-- open props -->
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/open-props/normalize.dark.min.css"
+    />
+
+    <!-- Tram-Lite & Javascript -->
+    <script src="https://unpkg.com/tram-lite@2"></script>
+    <script src="./main.js"></script>
+    <script src="./router.js"></script>
+    <script src="./price.js"></script>
+    <style>
+      body {
+        margin: 15px;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+      }
+    </style>
+    <title>Crypto Coin Collection</title>
+  </head>
+  <body>
+    <header>
+      <h1>Crypto Coin Collection</h1>
+    </header>
+    <main>
+      <!--List of coins https://coinmarketcap.com/ -->
+      <coin-preview
+        name="Bitcoin"
+        ticker="BTC"
+        price="$$$"
+        icon="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+      ></coin-preview>
+      <coin-preview
+        name="Ethereum"
+        ticker="ETH"
+        price="$$$"
+        icon="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+      ></coin-preview>
+      <coin-preview
+        name="Dogecoin"
+        ticker="DOGE"
+        price="$$$"
+        icon="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
+      ></coin-preview>
+    </main>
+  </body>
 </html>
